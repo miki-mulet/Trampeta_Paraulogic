@@ -12,6 +12,15 @@ El resultat, per tant, dona moltes més paraules de les acceptades al joc, però
 
 import unicodedata
 
+#----- Canviar les lletres del dia!!
+
+# keyLetter = input('Introdueix la lletra central: ')
+# sixLetters = input('Introdueix les lletres restants en qualsevol ordre: ')
+keyLetter = 'o' #Lletra central
+sixLetters = 'aesmzr' #Lletres restants, l'ordre és indiferent
+
+#-----
+
 
 def diccionari():
     '''
@@ -87,16 +96,6 @@ def tuti(result, allKeyLetters):
         if tuti == True:
             tutis.append(paraula)
     return tutis
-
-
-#----- Canviar les lletres del dia!!
-
-# keyLetter = input('Introdueix la lletra central: ')
-# sixLetters = input('Introdueix les lletres restants en qualsevol ordre: ')
-keyLetter = 'o' #Lletra central
-sixLetters = 'aesmzr' #Lletres restants, l'ordre és indiferent
-
-#-----
 
 diccionari = diccionari()
 diccionari = normalitzaDiccionari(diccionari)
